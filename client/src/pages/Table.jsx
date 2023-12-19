@@ -13,7 +13,7 @@ const Table = () => {
 
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
-  const url = "http://localhost:8000";
+  const url = "https://mern-stack-table.vercel.app";
 
   const fetchProducts = async () => {
     try {

@@ -6,7 +6,7 @@ const Login = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
   const navigate = useNavigate();
-  const url = "http://localhost:8000";
+  const url = "https://mern-stack-table.vercel.app";
 
   useEffect(() => {
     const token = localStorage.getItem("token");

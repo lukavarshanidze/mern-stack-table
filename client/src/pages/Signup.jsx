@@ -7,7 +7,7 @@ const Signup = () => {
   const passwordRef = useRef();
   const navigate = useNavigate();
   const [error, setError] = useState("");
-  const url = "http://localhost:8000";
+  const url = "https://mern-stack-table.vercel.app";
 
   const submitHandler = async (e) => {
     e.preventDefault();
