@@ -20,7 +20,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={token ? <Table /> : <Navigate to="/login" />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={token ? <Navigate to="/" /> : <Login />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>
       </Router>
