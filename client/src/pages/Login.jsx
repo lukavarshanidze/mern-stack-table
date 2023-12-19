@@ -33,10 +33,7 @@ const Login = () => {
         );
         localStorage.setItem("expiryDate", expiryDate.toISOString());
       }
-      const token = localStorage.getItem("token");
-      if (token) {
-        navigate("/");
-      }
+      navigate("/");
     } catch (error) {
       console.log("err", error);
     }
