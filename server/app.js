@@ -51,3 +51,6 @@ mongoose.connect(`${process.env.MONGOOSE_CONNECT}`)
     .catch(err => {
         console.log(err);
     })
+
+
+module.exports = app
