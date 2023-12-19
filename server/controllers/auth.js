@@ -63,7 +63,7 @@ exports.login = (req, res, next) => {
                     email: loadedUser.email,
                     userId: loadedUser._id.toString()
                 },
-                process.env.SECRET_KEY,
+                `${process.env.SECRET_KEY}`,
                 { expiresIn: '1h' }
             );
 

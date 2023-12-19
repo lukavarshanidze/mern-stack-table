@@ -42,7 +42,7 @@ app.use((error, req, res, next) => {
 })
 
 
-mongoose.connect(process.env.MONGOOSE_CONNECT)
+mongoose.connect("process.env.MONGOOSE_CONNECT")
     .then(result => {
         app.listen(8000, () => {
             console.log('listening to 3000');
