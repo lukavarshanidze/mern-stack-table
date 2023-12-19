@@ -20,7 +20,9 @@ app.use((req, res, next) => {
 
 // app.use(express.static(path.join(__dirname, '../client/build')))
 app.use(cors({
-    origin: "*",
+    origin: ["https://deploy-mern-1whq.vercel.app"],
+    methods: ["POST", "GET", "PUT", 'DELETE'],
+    credentials: true
 }));
 
 
