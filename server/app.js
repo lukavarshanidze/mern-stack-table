@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 
 // app.use(express.static(path.join(__dirname, '../client/build')))
 app.use(cors({
-    origin: ["https://mern-stack-table-e6su.vercel.app"],
+    origin: ["*"],
     methods: ["POST", "GET", "PUT", 'DELETE'],
     credentials: true
 }));
