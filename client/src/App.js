@@ -6,15 +6,6 @@ import { useEffect, useState } from 'react';
 
 
 function App() {
-  const [token, setToken] = useState(localStorage.getItem('token'));
-
-  useEffect(() => {
-    const storedToken = localStorage.getItem('token');
-    setToken(storedToken);
-  }, [token]);
-
-
-
   return (
     <div>
       <Router>
